@@ -20,7 +20,6 @@ export function oAuth1Client(options: InternalOptions<"oauth">) {
     provider.encoding ?? "HMAC-SHA1",
     undefined,
     provider.customHeaders
-
   )
 
   // Promisify get()  for OAuth1
