@@ -157,6 +157,9 @@ export interface OAuthConfig<P> extends CommonProviderOptions, PartialIssuer {
   requestTokenUrl?: string
   profileUrl?: string
   encoding?: string
+  customHeaders?: {
+    [key: string]: string;
+  }
   allowDangerousEmailAccountLinking?: boolean
 }
 
